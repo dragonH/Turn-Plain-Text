@@ -20,9 +20,7 @@
     shiftPress = false;
   });
   document.addEventListener('mouseover', (e) => {
-    setTimeout(() => {
-        change(e);
-    }, 100);
+      change(e);
   });
   function change(e) {
     if (e.target.tagName !== 'A') {
@@ -42,10 +40,11 @@
     e.target.after(node);
     e.target.style.display = 'none';
     e.target.style.visibility = 'hidden';
-    setTimeout(() => {
+    const timer = setInterval(() => {
         e.target.style.display = originalDisplay;
         e.target.style.visibility = originalVisibility;
         node.remove();
+        clearInterval(timer);
     }, 5000);
   }
 })();
