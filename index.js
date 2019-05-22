@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Turn-Plain-Text
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/dragonH/Turn-Plain-Text
 // @version      0.1
-// @description  try to take over the world!
+// @description  A script that can turn a tag to plain text
 // @author       dragonH
 // @match        https://*/*
 // @grant        none
